@@ -17,20 +17,11 @@ This is a console-based C++ application that helps manage hostel operations such
 ⚙️ Features
 
 
+Reserve bed new students
 
-Register new residents
+Stores record
 
-Allocate rooms with capacity checks
 
-Record and track fee payments
-
-Handle resident leave applications
-
-Log and resolve complaints
-
-View resident and room lists
-
-Menu-driven user interface
 
 
 
