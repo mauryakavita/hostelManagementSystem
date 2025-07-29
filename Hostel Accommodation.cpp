@@ -57,6 +57,7 @@ in.close();
 remove("D:/Hostel.txt");
 rename("D:/Hostel Temp.txt", "D:/Hostel.txt");        //remove  D:/
 cout<<"\tBed Reserved Successfuly!"<<endl;
+cout << "\tMonthly Rent: Rs. " << h.getRent() << endl;  // for print rent
 }
 };
 
