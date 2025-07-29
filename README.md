@@ -1,4 +1,4 @@
-HostelAccommodationManagementSystem
+Hostel Accommodation Management System
 
 
 
