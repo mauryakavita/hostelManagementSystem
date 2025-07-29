@@ -1,6 +1,10 @@
 #include <iostream>
 #include <fstream>
-#include <windows.h>
+#include <windows.h> 
+//#include <string>    
+//#include <thread>     ----- add for online compiler and remove window.h------------ 
+//#include <chrono>
+
 #include <sstream>
 using namespace std;
 
@@ -27,8 +31,8 @@ int getBed(){
  return Bed;
 }
 
-reserve(){
-ifstream in("D:/Hostel.txt");
+reserve(){      //void reserve()
+ifstream in("D:/Hostel.txt");         //remove D:/ in both lines
 ofstream out("D:/Hostel Temp.txt");
 
 string line;
@@ -51,7 +55,7 @@ out<<line<<endl;
 out.close();
 in.close();
 remove("D:/Hostel.txt");
-rename("D:/Hostel Temp.txt", "D:/Hostel.txt");
+rename("D:/Hostel Temp.txt", "D:/Hostel.txt");        //remove  D:/
 cout<<"\tBed Reserved Successfuly!"<<endl;
 }
 };
@@ -110,7 +114,7 @@ cout<<"\tEnter Choice: ";
 cin>>val;
 
 if(val==1){
-system("cls");
+system("cls");           //  remove
 string name,rollNo, address;
 cout<<"\tEnter Name of Student: ";
 cin>>name;
@@ -133,14 +137,14 @@ cout<<"\tSorry, Bed Not Available!"<<endl;
 }
 ofstream outFile("D:/Student.txt", ios::app);
 outFile<<"\t"<<s.getName()<<" : "<<s.getRollNo()<<" : "<<s.getAddress()<<endl<<endl;
-Sleep(5000);
+Sleep(5000);   // this_thread::sleep_for(chrono::seconds(5));
 }
 
 else if(val==2){
-system("cls");
+system("cls");      ///remove
 exit = true;
 cout<<"Good Luck!"<<endl;
-Sleep(3000);
+Sleep(3000);              // this_thread::sleep_for(chrono::seconds(3));
 }
 }
 }
