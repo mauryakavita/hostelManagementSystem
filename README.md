@@ -1,1 +1,1 @@
-# hotalManagementSystem
+# HotalManagementSystem
